@@ -1,7 +1,12 @@
+var displacement;
+
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(400, 400);
+	displacement = new Displacement(200, 200);
 }
 
 function draw() {
-
+	background(0);
+	displacement.update();
+	displacement.show();
 }
